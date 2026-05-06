@@ -1,0 +1,277 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+html, body {
+    height: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ================= PAGE WRAPPER ================= */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: linear-gradient(90deg, #0b3c8a, #1296db);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo, .navbar h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MAIN CONTENT ================= */
+.container {
+    flex: 1;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ================= GENERAL BOX ================= */
+.about-container,
+.claim-section,
+.support-box,
+.login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+/* ================= PAGE HEADINGS ================= */
+h1 {
+    color: #0b3c8a;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0b3c8a;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #0b3c8a;
+    margin-bottom: 10px;
+}
+
+/* ================= PARAGRAPH ================= */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ================= LISTS ================= */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ================= LOGIN PAGE ================= */
+.login-section {
+    flex: 1;
+    background: linear-gradient(135deg, #0b3c8a, #1296db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.login-box {
+    width: 380px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #0b3c8a, #1296db);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    opacity: 0.95;
+}
+
+.notice {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #666;
+}
+
+/* ================= CLAIM PAGE ================= */
+.claim-section input,
+.claim-section select,
+.claim-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.info-box {
+    background: #eef4ff;
+    padding: 15px;
+    border-left: 5px solid #0b3c5d;
+    margin-top: 20px;
+}
+
+/* ================= SUPPORT PAGE ================= */
+.support-container .support-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.support-box input,
+.support-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.support-box input[type="submit"] {
+    background: linear-gradient(90deg, #0b3c8a, #1296db);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.support-box input[type="submit"]:hover {
+    opacity: 0.95;
+}
+
+/* ================= NETWORK PAGE ================= */
+.hospital-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.hospital-table th,
+.hospital-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.hospital-table th {
+    background-color: #0b3c5d;
+    color: white;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #0b3c8a;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+/* ================= ABOUT PAGE SPECIFIC ================= */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    line-height: 1.8;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about-container h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.about-container ul {
+    margin-left: 25px;
+}
+
+.about-container li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .login-box, .about-container, .support-box, .claim-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar div a {
+        margin: 8px 0 0 0;
+    }
+
+    .hospital-table th, .hospital-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
